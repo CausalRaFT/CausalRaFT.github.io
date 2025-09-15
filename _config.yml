@@ -1,0 +1,8 @@
+title: Causal Inference Augmented Reflection for Long-Term Planning via LLMs
+remote_theme: pages-themes/cayman@v0.2.0
+github:
+  zip_url: http://example.com/download.zip
+  repository_url: https://github.com/hutcber/CARF
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+description: CCIR 2025<br/>Tuocheng Hu, Jiatao Zhang, Qingmiao Liang, Zeng Gu, Yufan Song, Wei Song, Shiqiang Zhu
