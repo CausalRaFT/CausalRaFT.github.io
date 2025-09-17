@@ -1,13 +1,13 @@
-<!-- <h1 align="center"> Causal Inference Augmented Reflection for Long-Term Planning via LLMs </h1> -->
+<!-- <h1 align="center"> Causal Inference Augmented Reflection for Long-Horizon Planning via LLMs </h1> -->
 
 <!--
 <div align='center'>
-  <font size=4 color=black>ICRA 2025</font>
+  <font size=4 color=black>ICRA 2026</font>
 </div>
 -->
 
 <!--
-[author1](https://www.yuque.com/zhangjiatao-grdyv/rn49ht/lz080qshd6weqi0g)
+[author1](Anonymous Author(s))
 -->
 
 ## Abstract
@@ -16,11 +16,8 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 ## Paper
 <iframe  width="400" height="420" src="./Causal_Reasoning_Augmented_Reflection_for_Long-Horizon_Robotic_Planning.pdf"></iframe>
 
-## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bDYz9beUUgc?si=BDGy72KEdKV0TjOy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Results
-Example of our frameworks for long-term task planning:
+Example of our frameworks for Long-Horizon task planning:
 
 <div align='center'>
   <img src="./example.png">
