@@ -11,7 +11,7 @@
 -->
 
 ## Abstract
-Recent developments suggest that Large Language Models (LLMs) can identify and correct errors in their generated responses using reflection mechanisms. However, when applied to long-term task planning, these methods reveal significant limitations. Reflection methods may neglect the causes of errors in earlier planning, producing results that contain inaccurate information, thereby leading to further mistakes in subsequent planning. This paper explores the reflection frameworks suitable for long-term task planning. Inspired by human causal cognitive processes, we introduce the Causal Reasoning Augmented Reflection Framework (CARF). CARF employs systematic causal reasoning to accurately identify the root causes of errors and to generate effective action plan revisions by integrating association information. We conducted household task experiments in AlfWorld and VirtualHome, and the results show that our framework significantly improves the success rate of complex long-term tasks. Furthermore, we applied CARF to a real-world robotic system, highlighting its potential for practical applications.
+Recent developments suggest that Large Language Models (LLMs) can identify and correct errors in their generated responses using reflection mechanisms. However, when applied to long-horizon task planning, these methods reveal significant limitations. Reflection methods may neglect the causes of errors in earlier planning, producing results that contain inaccurate information, thereby leading to further mistakes in subsequent planning. This paper explores the reflection framework suitable for long-horizon task planning. Inspired by human causal cognitive processes, we introduce the Causal Reasoning augmented reFlecTion framework (CRaFT). CRaFT employs systematic causal reasoning to accurately identify the root causes of errors and to generate effective action plan revisions by integrating association information. We conducted household task experiments in ALFWorld and VirtualHome, and the results show that CRaFT significantly improves success rates by 34\% and 27\%, respectively, on complex long-horizon tasks. Furthermore, we applied CRaFT to a real-world robotic system, highlighting its potential for practical applications. Website at https://causalraft.github.io/
 
 ## Paper
 <iframe  width="400" height="420" src="./Causal_Reasoning_Augmented_Reflection_for_Long-Term_Planning_via_LLMs.pdf"></iframe>
@@ -28,9 +28,10 @@ Example of our frameworks for long-term task planning:
 
 ## Methodology
 Our framework operates by taking historical task information and environmental feedback as input and producing reflection results as output. The framework comprises three stages: 
-1. Counterfactual Reasoning is responsible for identifying and correcting critical erroneous steps and analyzing the RCE.
-2. Associative Reasoning is tasked with inferring about the associations.
-3. Plan Revision is charged with generating the action plan revisions for subsequent trials. Additionally, we have introduced a Memory Management module to manage the historical results generated.
+1) Associative Reasoning is tasked with inferring about the associations.
+2) Plan Revision is charged with generating the action plan revisions for subsequent trials. 
+3) Counterfactual Reasoning is responsible for identifying and repairing error actions and analyzing the RCE.
+4) Additionally, we have introduced a Memory Management module to manage the historical results generated.
 
 <div align='center'>
   <img src="./framework.png">
