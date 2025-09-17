@@ -5,4 +5,4 @@ github:
   repository_url: https://github.com/hutcber/CARF
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-description: ICRA 2026<br/>
+description: ICRA 2026<br/> Anonymous Author(s)
