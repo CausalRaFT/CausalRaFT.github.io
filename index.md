@@ -87,9 +87,25 @@ Our framework operates by taking historical task information and environmental f
 <div class="textbox">
     <p class="smaller-font">
     <pre>
-You will be given the history of a past experience in which you were placed in an environment and given a task to complete. you were unsuccessful in completing the task. You will also be given a list of key actions that can be used to complete the task. Then, review the past experience and identify the key actions that led to task failure or execution failure based on the descriptions in the list of actions, and use counterfactual reasoning to modify or add the correct actions based on the grammatical requirements in the list of actions to get to the root of the problem. Finally, find the root cause of task failure based on the grammatical requirements in the action list. Note: Do not seek the causes of failure from task goal definition or actions in the action list. Ensure tasks can be completed within the range of actions listed. A specific action fails because its prerequisites mentioned in the action list were not met. Do not have more than three counterfactual reasoning analysis. 
+You will be given the history of a past experience in which you were placed in an environment and given a task to complete. you were unsuccessful in completing the task. Your goal is to identify Responsible Causal Errors (RCE) in a failed trajectory by analyzing preconditions of actions, using counterfactual reasoning to determine which upstream actions caused the failure. Review the past experience and identify the error actions higher dependency degrees, and use counterfactual reasoning to modify or add the correct actions based on the grammatical requirements in the list of actions to get to the root of the problem. Finally, find the root cause of task failure based on the grammatical requirements in the action list. 
+      
+--- Instructions ---
+Key Principles:
+  Do not seek the causes of failure from task goal definition or actions in the action list. 
+  Ensure tasks can be completed within the range of actions listed. 
+  A specific action fails because its prerequisites mentioned in the action list were not met. 
+  Do not have more than three counterfactual reasoning analysis. 
 
-=================Action List=====================
+Precondition Evaluation:
+  For the failed action, check if its preconditions were satisfied given the trajectory and environment states.  
+   - If satisfied → attribute the failure to this action itself.  
+   - If not satisfied → backtrack to identify which earlier action(s) caused the unmet precondition.  
+
+Counterfactual Reasoning:
+   Assume each candidate action in had been executed successfully.  Re-evaluate whether the subsequent actions’ preconditions would be satisfied, and whether the task goal could be achieved.  
+
+
+=================Action Dependency & Preconditions List(ranked by dependency degree, high → low)=====================
 When you do not take the object or not go to the container but want to use the following actions, you will fail.
 1.heat {obj} with microwave: Heat the specified object (obj) with the microwave.
 2.clean {obj} with sinkbasin: Cleans the specified object (obj) with the sinkbasin.
@@ -105,13 +121,11 @@ When the target container is not present but you want to use the following actio
 When you do not see the container but want to use the following actions, you will fail.
 7.open {recep}: Use it when you want to see the items inside the container."""
 
-I will give you the example to help you better understand how to use counterfactual reasoning to generate counterfactual reasoning analysis.
-
-=================The example=====================
-Counterfactual reasoning analysis:
-1. If I add the action "***" before the action "***", then I don't get this failure. The first root cause of the task failure was due to ***.
-2. If I add the action "***" after the action "***", then I don't get this failure. The second root cause of the task failure was due to ***.
-3. If I correct the action "***" to the action "***", then I don't get this failure. The third root cause of the task failure was due to ***.
+Output Format: 
+  Counterfactual reasoning analysis:
+  1. If I add the action "***" before the action "***", then I don't get this failure. The first root cause of the task failure was due to ***.
+  2. If I add the action "***" after the action "***", then I don't get this failure. The second root cause of the task failure was due to ***.
+  3. If I correct the action "***" to the action "***", then I don't get this failure. The third root cause of the task failure was due to ***.
 
 
 Here is the history you need for counterfactual reasoning:
