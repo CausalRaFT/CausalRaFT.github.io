@@ -91,18 +91,18 @@ You will be given the history of a past experience in which you were placed in a
       
 --- Instructions ---
 Key Principles:
-  Do not seek the causes of failure from task goal definition or actions in the action list. 
-  Ensure tasks can be completed within the range of actions listed. 
-  A specific action fails because its prerequisites mentioned in the action list were not met. 
-  Do not have more than three counterfactual reasoning analysis. 
+  1. Do not seek the causes of failure from task goal definition or actions in the action list. 
+  2. Ensure tasks can be completed within the range of actions listed. 
+  3. A specific action fails because its preconditions mentioned in the action list were not met. 
+  4. Do not have more than three counterfactual reasoning analysis. 
 
 Precondition Evaluation:
-  For the failed action, check if its preconditions were satisfied given the trajectory and environment states.  
+  1. For the failed action, check if its preconditions were satisfied given the trajectory and environment states.  
    - If satisfied → attribute the failure to this action itself.  
    - If not satisfied → backtrack to identify which earlier action(s) caused the unmet precondition.  
 
 Counterfactual Reasoning:
-   Assume each candidate action in had been executed successfully.  Re-evaluate whether the subsequent actions’ preconditions would be satisfied, and whether the task goal could be achieved.  
+   1. Assume each candidate action in had been executed successfully. Re-evaluate whether the subsequent actions’ preconditions would be satisfied, and whether the task goal could be achieved.  
 
 
 =================Action Dependency & Preconditions List(ranked by dependency degree, high → low)=====================
