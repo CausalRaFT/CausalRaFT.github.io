@@ -53,7 +53,40 @@
 Recent developments suggest that Large Language Models (LLMs) can identify and correct errors in their generated responses using reflection mechanisms. However, when applied to long-horizon task planning, these methods reveal significant limitations. Reflection methods may neglect the causes of errors in earlier planning, producing results that contain inaccurate information, thereby leading to further mistakes in subsequent planning. This paper explores the reflection framework suitable for long-horizon task planning. Inspired by human causal cognitive processes, we introduce the Causal Reasoning augmented reFlecTion framework (CRaFT). CRaFT employs systematic causal reasoning to accurately identify the root causes of errors and to generate effective action plan revisions by integrating association information. We conducted household task experiments in ALFWorld and VirtualHome, and the results show that CRaFT significantly improves success rates by 34\% and 27\%, respectively, on complex long-horizon tasks. Furthermore, we applied CRaFT to a real-world robotic system, highlighting its potential for practical applications.
 
 ## Paper
-<iframe  width="400" height="420" src="./Causal_Reasoning_Augmented_Reflection_for_Long-Horizon_Robotic_Planning.pdf"></iframe>
+<!-- <iframe  width="400" height="420" src="./Causal_Reasoning_Augmented_Reflection_for_Long-Horizon_Robotic_Planning.pdf"></iframe> -->
+
+<div class="pdf-container">
+  <iframe 
+    class="paper-pdf"
+    src="./Causal_Reasoning_Augmented_Reflection_for_Long-Horizon_Robotic_Planning.pdf"
+    frameborder="0">
+  </iframe>
+</div>
+
+{% raw %}
+<style>
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.paper-pdf {
+  width: 90%;              /* 占页面宽度 90% */
+  max-width: 900px;        /* 最大宽度限制 */
+  height: 80vh;            /* 高度为视口的 80%，可视区域更大 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .paper-pdf {
+    width: 95%;
+    height: 70vh;          /* 手机端稍微短一些 */
+  }
+}
+</style>
 
 ##Video
 
