@@ -9,10 +9,47 @@
 <!--
 [author1](Anonymous Author(s))
 -->
-<div align="center">
-<h2>Code Availability Statement</h2>
-<p>The source code will be made accessible upon formal acceptance of this paper.</p>
-</div>
+
+<section class="release-banner" role="region" aria-label="Code Release Statement">
+  <div class="banner-inner">
+    <strong>Code Release Notice:</strong>
+    <span>To ensure anonymous review, the complete source code and trained models will be released in this repository upon paper acceptance.</span>
+    <a href="#updates" class="btn-notify">Get Updates</a>
+  </div>
+</section>
+
+{% raw %}
+<style>
+.release-banner{
+  background: linear-gradient(90deg,#0b74de1a,#0bde9e1a);
+  border-left: 4px solid #0b74de;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.banner-inner{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.release-banner strong{font-weight:600}
+.btn-notify{
+  margin-left:auto;
+  text-decoration:none;
+  padding:6px 10px;
+  border-radius:6px;
+  border:1px solid #0b74de;
+  background:transparent;
+  color:#0b74de;
+  font-size:0.9rem;
+}
+@media (max-width:520px){
+  .btn-notify{margin-left:0}
+}
+</style>
+{% endraw %}
+
 ## Abstract
 Recent developments suggest that Large Language Models (LLMs) can identify and correct errors in their generated responses using reflection mechanisms. However, when applied to long-horizon task planning, these methods reveal significant limitations. Reflection methods may neglect the causes of errors in earlier planning, producing results that contain inaccurate information, thereby leading to further mistakes in subsequent planning. This paper explores the reflection framework suitable for long-horizon task planning. Inspired by human causal cognitive processes, we introduce the Causal Reasoning augmented reFlecTion framework (CRaFT). CRaFT employs systematic causal reasoning to accurately identify the root causes of errors and to generate effective action plan revisions by integrating association information. We conducted household task experiments in ALFWorld and VirtualHome, and the results show that CRaFT significantly improves success rates by 34\% and 27\%, respectively, on complex long-horizon tasks. Furthermore, we applied CRaFT to a real-world robotic system, highlighting its potential for practical applications.
 
@@ -20,36 +57,29 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 <iframe  width="400" height="420" src="./Causal_Reasoning_Augmented_Reflection_for_Long-Horizon_Robotic_Planning.pdf"></iframe>
 
 ##Video
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>居中视频示例</title> -->
-    <style>
-        /* 关键样式：使用Flexbox使视频容器在页面中居中 */
-        .video-container {
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center;     /* 垂直居中 */
-            height: 100vh;           /* 设置容器高度为整个视口高度，确保垂直居中生效 */
-        }
 
-        /* 可选：为视频设置最大宽度，使其在移动设备上自适应 */
-        video {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="video-container">
-        <video width="600" controls autoplay>
-            <source src="./vedio_final.mp4" type="video/mp4">
-        </video>
-    </div>
-</body>
-</html>
+<div class="video-container">
+  <video width="600" controls autoplay>
+    <source src="./vedio_final.mp4" type="video/mp4">
+  </video>
+</div>
+
+{% raw %}
+<style>
+.video-container {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  height: 80vh;            /* slightly less than full height for better layout */
+}
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+</style>
+{% endraw %}
 
 ## Results
 Example of our frameworks for Long-Horizon task planning:
