@@ -173,7 +173,7 @@ Our framework operates by taking historical task information and environmental f
         font-size: smaller;
     }
 </style>
-<div style="text-align: center;">Listing 1: Prompt for Counterfactual Reasoning, we need to input the example from the previous attempt and the failed plan.</div>
+<div style="text-align: center;">Listing 1: Prompt for Counterfactual Reasoning, we need to input the example from the previous trial and the failed plan.</div>
 <div class="textbox">
     <p class="smaller-font">
     <pre>
@@ -231,7 +231,7 @@ Counterfactual reasoning analysis:
 
 #### 2.Prompt for Associative Reasoning
 
-<div style="text-align: center;">Listing 2: Prompt for Associative Reasoning, we need to input the failed plan from the previous attempt.</div>
+<div style="text-align: center;">Listing 2: Prompt for Associative Reasoning, we need to input the failed plan from the previous trial</div>
 
 <div class="textbox">
     <p class="smaller-font">
@@ -262,7 +262,7 @@ Associative reasoning analysis:
     <p class="smaller-font">
     <pre>
 
-You will be given the history of a past experience in which you were placed in an environment and given a task to complete. You were unsuccessful in completing the task.You will be provided with an analysis of counterfactual reasoning and association reasoning based on your previous experience. Please create a plan for the next attempt, incorporating insights from these two analyses. You need to output in the format of the example without any additional redundant content.
+You will be given the history of a past experience in which you were placed in an environment and given a task to complete. You were unsuccessful in completing the task.You will be provided with an analysis of counterfactual reasoning and association reasoning based on your previous experience. Please create a plan for the next trial, incorporating insights from these two analyses. You need to output in the format of the example without any additional redundant content.
 I will give you some examples to help you better understand how to generate plan.
 
 =================The first example=====================
@@ -295,7 +295,7 @@ You will be given the history of a past experience in which you were placed in a
 {past_experience}
 
 
-Plans from past attempts:
+Plans from past trials:
 Trial #{i}: {Plan_i}
 
 New plan:
