@@ -88,7 +88,7 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 }
 </style>
 
-##Video
+## Video
 
 <div class="video-container">
   <video class="demo-video" controls autoplay muted playsinline>
@@ -103,19 +103,20 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;              /* 改为 margin 控制前后间距 */
+  margin: 20px 0 40px 0; /* 减小顶部间距，保持底部间距 */
 }
 
 .demo-video {
-  width: 80%;                  /* 占容器宽度的 80% */
-  max-width: 960px;            /* 最大宽度限制 */
+  width: 85%;              /* 略放大视频 */
+  max-width: 1000px;       /* 增大最大宽度 */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
   height: auto;
 }
+
 @media (max-width: 768px) {
   .demo-video {
-    width: 95%;                /* 在移动端更宽一点 */
+    width: 95%;
   }
 }
 </style>
