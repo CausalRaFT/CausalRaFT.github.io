@@ -58,8 +58,9 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 ##Video
 
 <div class="video-container">
-  <video width="600" controls autoplay>
+  <video class="demo-video" controls autoplay muted playsinline>
     <source src="./vedio_final.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
 </div>
 
@@ -67,15 +68,22 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 <style>
 .video-container {
   display: flex;
-  justify-content: center; /* horizontally center */
-  align-items: center;     /* vertically center */
-  height: 80vh;            /* slightly less than full height for better layout */
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;              /* 改为 margin 控制前后间距 */
 }
-video {
-  max-width: 100%;
+
+.demo-video {
+  width: 80%;                  /* 占容器宽度的 80% */
+  max-width: 960px;            /* 最大宽度限制 */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+  .demo-video {
+    width: 95%;                /* 在移动端更宽一点 */
+  }
 }
 </style>
 {% endraw %}
@@ -103,10 +111,7 @@ Our framework operates by taking historical task information and environmental f
 <div align='center'>
   <img src="./method.png">
 </div>
-
-## Experiment
-
-<div style="display: flex;">
+<!-- <div style="display: flex;">
     <div>
           <video width="380" height="240" controls autoplay>
             <source src="./fail1.mp4"
@@ -122,7 +127,7 @@ Our framework operates by taking historical task information and environmental f
 </div>
 <div style="display: flex;">
   <pre style="text-align: center;  background-color: white; border: none;">             A.Initial Trial                                 B.Improved Trial </pre>
-</div>
+</div> -->
 
 ## Appendix
 ### A.Method
