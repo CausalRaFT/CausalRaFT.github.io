@@ -17,7 +17,6 @@
   </div>
 </section>
 
-{% raw %}
 <style>
 .release-banner{
   background: linear-gradient(90deg,#0b74de1a,#0bde9e1a);
@@ -47,7 +46,6 @@
   .btn-notify{margin-left:0}
 }
 </style>
-{% endraw %}
 
 ## Abstract
 Recent developments suggest that Large Language Models (LLMs) can identify and correct errors in their generated responses using reflection mechanisms. However, when applied to long-horizon task planning, these methods reveal significant limitations. Reflection methods may neglect the causes of errors in earlier planning, producing results that contain inaccurate information, thereby leading to further mistakes in subsequent planning. This paper explores the reflection framework suitable for long-horizon task planning. Inspired by human causal cognitive processes, we introduce the Causal Reasoning augmented reFlecTion framework (CRaFT). CRaFT employs systematic causal reasoning to accurately identify the root causes of errors and to generate effective action plan revisions by integrating association information. We conducted household task experiments in ALFWorld and VirtualHome, and the results show that CRaFT significantly improves success rates by 34\% and 27\%, respectively, on complex long-horizon tasks. Furthermore, we applied CRaFT to a real-world robotic system, highlighting its potential for practical applications.
