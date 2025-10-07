@@ -97,37 +97,27 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
   </video>
 </div>
 
-{% raw %}
 <style>
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 40px 0; /* 减小顶部间距，保持底部间距 */
+  margin: 20px 0;              /* 减小上下间距 */
 }
 
 .demo-video {
-  width: 85%;              /* 略放大视频 */
-  max-width: 1000px;       /* 增大最大宽度 */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 85%;                  /* 稍微放大视频 */
+  max-width: 1080px;           /* 最大宽度更大一些 */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   height: auto;
 }
-
 @media (max-width: 768px) {
   .demo-video {
     width: 95%;
   }
 }
 </style>
-{% endraw %}
-
-## Results
-Example of our frameworks for Long-Horizon task planning:
-
-<div align='center'>
-  <img src="./example.png">
-</div>
 
 ## Methodology
 Our framework operates by taking historical task information and environmental feedback as input and producing reflection results as output. The framework comprises three stages: 
