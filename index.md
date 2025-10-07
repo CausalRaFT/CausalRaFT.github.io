@@ -107,7 +107,7 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
 
 .demo-video {
   width: 85%;                  /* 稍微放大视频 */
-  max-width: 1080px;           /* 最大宽度更大一些 */
+  max-width: 1080px;           /* 限制最大宽度 */
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   height: auto;
