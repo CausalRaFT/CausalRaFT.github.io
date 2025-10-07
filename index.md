@@ -61,7 +61,6 @@ Recent developments suggest that Large Language Models (LLMs) can identify and c
   </iframe>
 </div>
 
-{% raw %}
 <style>
 .pdf-container {
   display: flex;
