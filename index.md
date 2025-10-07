@@ -14,7 +14,6 @@
   <div class="banner-inner">
     <strong>Code Release Notice:</strong>
     <span>To ensure anonymous review, the complete source code and trained models will be released in this repository upon paper acceptance.</span>
-    <a href="#updates" class="btn-notify">Get Updates</a>
   </div>
 </section>
 
