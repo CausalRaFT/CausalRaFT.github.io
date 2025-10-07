@@ -13,7 +13,7 @@
 <section class="release-banner" role="region" aria-label="Code Release Statement">
   <div class="banner-inner">
     <strong>Code Release Notice:</strong>
-    <span>To ensure anonymous review, the complete source code will be released in this repository upon paper acceptance.</span>
+    <span>To ensure anonymous review, the complete source code will be released upon paper acceptance.</span>
   </div>
 </section>
 
