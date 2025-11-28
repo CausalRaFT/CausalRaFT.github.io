@@ -177,7 +177,7 @@ Our framework operates by taking historical task information and environmental f
 <div class="textbox">
     <p class="smaller-font">
     <pre>
-You will be given the history of a past experience in which you were placed in an environment and given a task to complete. you were unsuccessful in completing the task. Your goal is to identify Responsible Causal Errors (RCE) in a failed trajectory by analyzing preconditions of actions, using counterfactual reasoning to determine which upstream actions caused the failure. Review the past experience and identify the error actions higher dependency degrees, and use counterfactual reasoning to modify or add the correct actions based on the grammatical requirements in the list of actions to get to the root of the problem. Finally, find the root cause of task failure based on the grammatical requirements in the action list. 
+You will be given the history of a past experience in which you were placed in an environment and given a task to complete. you were unsuccessful in completing the task. Your goal is to identify the Root Causes of Errors (RCE) in a failed trajectory by analyzing preconditions of actions, using counterfactual reasoning to determine which upstream actions caused the failure. Review the past experience and identify the error actions higher dependency degrees, and use counterfactual reasoning to modify or add the correct actions based on the grammatical requirements in the list of actions to get to the root of the problem. Finally, find the root cause of task failure based on the grammatical requirements in the action list. 
       
 --- Instructions ---
 Key Principles:
